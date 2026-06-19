@@ -139,7 +139,52 @@ SECOND_BATCH_FILES = [
 ]
 
 
+THIRD_BATCH_FILES = [
+    "AIRA_61_AI_Assisted_Dynamic_Workspace_and_System_Builder_Standard_v1.2_Revised.docx",
+    "AIRA_62_Enterprise_Grade_Industry_Leadership_and_Executable_Governance_Roadmap_Standard_v1.0.docx",
+    "AIRA_63_Production_Readiness_Review_and_Operational_Readiness_Review_Standard_v1.0.docx",
+    "AIRA_64_Resilience_Lab_Performance_Concurrency_and_Chaos_Testing_Runbook_v1.0.docx",
+    "AIRA_65_Policy_as_Code_Implementation_Standard_v1.0.docx",
+    "AIRA_66_Evidence_Manifest_Schema_and_Evidence_Pack_Data_Model_v1.0.docx",
+    "AIRA_67_API_Event_Schema_Registry_DLQ_and_Replay_Governance_Runbook_v1.0.docx",
+    "AIRA_68_Control_Objectives_and_Evidence_Traceability_Matrix_v1.0.docx",
+    "AIRA_69_Threat_Modeling_Abuse_Case_and_Secure_Design_Review_Playbook_v1.0.docx",
+    "AIRA_70_AI_Evaluation_Red_Team_Guardrail_and_Model_Route_Certification_Standard_v1.0.docx",
+    "AIRA_71_Data_Governance_Retention_Privacy_and_Evidence_Classification_Standard_v1.0.docx",
+    "AIRA_72_Reference_Implementation_Golden_Paths_Standard_v1.0.docx",
+    "AIRA_73_System_Builder_Operating_Manual_and_Maker_Checker_Runbook_v1.0.docx",
+    "AIRA_74_Dynamic_Workspace_Production_UX_and_Experience_Pack_Certification_Standard_v1.0.docx",
+    "AIRA_75_Dynamic_Workspace_Certification_Checklist_and_Evidence_Template_Pack_v1.0.docx",
+    "AIRA_76_Architecture_Fitness_Function_Executable_Gate_Pack_v1.0.docx",
+    "AIRA_77_Canonical_Data_Element_Variable_Message_and_Error_Code_Governance_Standard_v1.0.docx",
+    "AIRA_78_Canonical_Data_Dictionary_and_Message_Catalog_Physical_Schema_Flyway_Seeder_and_Admin_Workflow_Guide_v1.0.docx",
+    "AIRA_79_Initial_Canonical_Data_Dictionary_Domain_Code_and_Message_Error_Seed_Catalog_v1.0.docx",
+    "AIRA_80_Data_and_Message_Governance_CICD_Validator_Code_Generation_Template_and_Test_Pack_v1.0.docx",
+    "AIRA_81_Message_Localization_Support_Knowledge_Base_and_User_Communication_Governance_Guide_v1.0.docx",
+    "AIRA_091_to_094_Compliance_Execution_Guide_and_Register_Adoption_Checklist_v1.0.docx",
+    "AIRA-DOC-082_Batch_Scheduled_Long_Running_EOD_Run_Governance_Standard_v1.0.docx",
+    "AIRA-DOC-083_Batch_Operations_Restart_Recovery_Reconciliation_Evidence_Runbook_v1.0.docx",
+    "AIRA-DOC-084_Reporting_Analytics_Semantic_Layer_BI_Governance_Standard_v1.0.docx",
+    "AIRA-DOC-085_Report_Generation_Distribution_Retention_Analytics_Evidence_Template_Pack_v1.0.docx",
+    "AIRA-DOC-086_Input_Validation_Data_Integrity_Cross_Layer_Consistency_Governance_Standard_v1.0.docx",
+    "AIRA-DOC-087_Frontend_Backend_API_Event_Workflow_Database_Validation_Implementation_Standard_v1.0.docx",
+    "AIRA-DOC-088_Validation_Error_Code_Message_Classification_User_Feedback_Governance_Standard_v1.0.docx",
+    "AIRA-DOC-089_Validation_Evidence_Testing_Regression_Acceptance_Template_Pack_v1.0.docx",
+    "AIRA-DOC-089_Validation_Evidence_Testing_Regression_and_Acceptance_Template_Pack_v1.1_Aligned_Improved.docx",
+    "AIRA-DOC-090_Enterprise_Application_Foundation_Coverage_Product_Correctness_Build_Right_Governance_Assessment_v1.0.docx",
+    "AIRA-DOC-090A_Enterprise_Application_Control_Coverage_Matrix_Documentation_Action_Plan_v1.0.docx",
+    "AIRA-DOC-091_Product_Management_Requirements_Traceability_Value_Realization_Product_Decision_Governance_Standard_v1.0.docx",
+    "AIRA-DOC-092_NFR_Performance_Scalability_Capacity_Concurrency_Enterprise_Readiness_Governance_Standard_v1.0.docx",
+    "AIRA-DOC-094_Enterprise_Data_Dictionary_Reference_Data_Naming_MDM_Data_Quality_Governance_Standard_v1.0.docx",
+    "AIRA-DOC-095_Register_Adoption_Source_Pack_Manifest_Knowledge_Projection_Cross_Reference_Update_Runbook_v1.0.docx",
+    "AIRA-DOC-095A_00A_00D_Register_Patch_Set_for_AIRA_DOC_082_to_094_v1.0.docx",
+    "AIRA-DOC-095B_Cross_Reference_Revision_Instruction_Pack_for_Existing_AIRA_Standards_v1.0.docx",
+    "AIRA-DOC-095C_Knowledge_Projection_OpenKM_Evidence_Path_Source_Pack_Packer_Checklist_v1.0.docx",
+]
+
+
 SOURCE_FILES.extend(SECOND_BATCH_FILES)
+SOURCE_FILES.extend(THIRD_BATCH_FILES)
 
 
 CATEGORIES = {
@@ -253,6 +298,45 @@ CATEGORIES = {
     "58": ("46-60-dynamic-workspace", "Dynamic workspace"),
     "59": ("46-60-dynamic-workspace", "Dynamic workspace"),
     "60": ("46-60-dynamic-workspace", "Dynamic workspace"),
+    "61": ("61-ai-assisted-workspace-system-builder", "AI-assisted workspace and system builder"),
+    "62": ("62-enterprise-governance-roadmap", "Enterprise governance roadmap"),
+    "63": ("63-production-operational-readiness", "Production and operational readiness"),
+    "64": ("64-resilience-performance-chaos", "Resilience performance and chaos testing"),
+    "65": ("65-policy-as-code", "Policy as code"),
+    "66": ("66-evidence-manifest-data-model", "Evidence manifest and data model"),
+    "67": ("67-api-event-schema-registry", "API event schema registry"),
+    "68": ("68-control-objectives-traceability", "Control objectives and traceability"),
+    "69": ("69-threat-modeling-secure-design", "Threat modeling and secure design"),
+    "70": ("70-ai-evaluation-red-team", "AI evaluation and red team"),
+    "71": ("71-data-governance-privacy-retention", "Data governance privacy and retention"),
+    "72": ("72-reference-implementation-golden-paths", "Reference implementation golden paths"),
+    "73": ("73-system-builder-operating-manual", "System builder operating manual"),
+    "74": ("74-dynamic-workspace-production-ux", "Dynamic workspace production UX"),
+    "75": ("75-dynamic-workspace-certification", "Dynamic workspace certification"),
+    "76": ("76-architecture-fitness-gate-pack", "Architecture fitness gate pack"),
+    "77": ("77-canonical-data-message-governance", "Canonical data and message governance"),
+    "78": ("78-canonical-data-dictionary-message-catalog", "Canonical data dictionary and message catalog"),
+    "79": ("79-canonical-seed-catalog", "Canonical seed catalog"),
+    "80": ("80-data-message-governance-cicd", "Data and message governance CI/CD"),
+    "81": ("81-message-localization-knowledge-base", "Message localization and knowledge base"),
+    "082": ("82-batch-run-governance", "Batch run governance"),
+    "083": ("83-batch-operations-recovery", "Batch operations recovery"),
+    "084": ("84-reporting-analytics-bi", "Reporting analytics and BI"),
+    "085": ("85-report-generation-retention", "Report generation and retention"),
+    "086": ("86-input-validation-data-integrity", "Input validation and data integrity"),
+    "087": ("87-cross-layer-validation-implementation", "Cross-layer validation implementation"),
+    "088": ("88-validation-error-feedback", "Validation error feedback"),
+    "089": ("89-validation-evidence-testing", "Validation evidence and testing"),
+    "090": ("90-enterprise-application-foundation", "Enterprise application foundation"),
+    "090A": ("90-enterprise-application-foundation", "Enterprise application foundation"),
+    "091": ("91-product-management-governance", "Product management governance"),
+    "091-to-094": ("91-94-compliance-register-adoption", "Compliance register adoption"),
+    "092": ("92-nfr-enterprise-readiness", "NFR enterprise readiness"),
+    "094": ("94-enterprise-data-dictionary", "Enterprise data dictionary"),
+    "095": ("95-register-adoption-source-pack", "Register adoption source pack"),
+    "095A": ("95-register-adoption-source-pack", "Register adoption source pack"),
+    "095B": ("95-register-adoption-source-pack", "Register adoption source pack"),
+    "095C": ("95-register-adoption-source-pack", "Register adoption source pack"),
 }
 
 
@@ -345,7 +429,7 @@ def iter_body_blocks(root: ET.Element) -> Iterable[str]:
 def parse_metadata(source_name: str) -> DocMeta:
     stem = Path(source_name).stem
     match = re.match(
-        r"^(AIRA_[0-9]{2}[A-Z]?|AIRA-DOC-[0-9]{3}[A-Z]?)[_-](.+?)_v([0-9]+(?:[._][0-9]+)*)(?:_|$)",
+        r"^(AIRA_[0-9]{2,3}(?:_to_[0-9]{2,3})?[A-Z]?|AIRA-DOC-[0-9]{3}[A-Z]?)[_-](.+?)_v([0-9]+(?:[._][0-9]+)*)(?:_|$)",
         stem,
     )
     if not match:

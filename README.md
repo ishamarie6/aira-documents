@@ -54,6 +54,46 @@ The second batch adds the following converted AIRA DOCX sections:
 - `45-poc2-mortgage-experience`
 - `46-60-dynamic-workspace`
 
+## Batch 3
+
+The third batch adds these converted AIRA DOCX and AIRA-DOC sections:
+
+- `61-ai-assisted-workspace-system-builder`
+- `62-enterprise-governance-roadmap`
+- `63-production-operational-readiness`
+- `64-resilience-performance-chaos`
+- `65-policy-as-code`
+- `66-evidence-manifest-data-model`
+- `67-api-event-schema-registry`
+- `68-control-objectives-traceability`
+- `69-threat-modeling-secure-design`
+- `70-ai-evaluation-red-team`
+- `71-data-governance-privacy-retention`
+- `72-reference-implementation-golden-paths`
+- `73-system-builder-operating-manual`
+- `74-dynamic-workspace-production-ux`
+- `75-dynamic-workspace-certification`
+- `76-architecture-fitness-gate-pack`
+- `77-canonical-data-message-governance`
+- `78-canonical-data-dictionary-message-catalog`
+- `79-canonical-seed-catalog`
+- `80-data-message-governance-cicd`
+- `81-message-localization-knowledge-base`
+- `82-batch-run-governance`
+- `83-batch-operations-recovery`
+- `84-reporting-analytics-bi`
+- `85-report-generation-retention`
+- `86-input-validation-data-integrity`
+- `87-cross-layer-validation-implementation`
+- `88-validation-error-feedback`
+- `89-validation-evidence-testing`
+- `90-enterprise-application-foundation`
+- `91-product-management-governance`
+- `91-94-compliance-register-adoption`
+- `92-nfr-enterprise-readiness`
+- `94-enterprise-data-dictionary`
+- `95-register-adoption-source-pack`
+
 Each Markdown file includes YAML frontmatter for Obsidian properties:
 
 - `title`
