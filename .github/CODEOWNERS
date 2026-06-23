@@ -1,0 +1,18 @@
+﻿# AIRA Documents CODEOWNERS
+# Replace or expand owners as the AIRA reviewer team grows.
+
+* @ishamarie6
+
+/00* @ishamarie6
+/*register* @ishamarie6
+/*Register* @ishamarie6
+/*AVCI* @ishamarie6
+/*avci* @ishamarie6
+/*Security* @ishamarie6
+/*security* @ishamarie6
+/*DevSecOps* @ishamarie6
+/*devsecops* @ishamarie6
+/*Evidence* @ishamarie6
+/*evidence* @ishamarie6
+/*Agent* @ishamarie6
+/*agent* @ishamarie6

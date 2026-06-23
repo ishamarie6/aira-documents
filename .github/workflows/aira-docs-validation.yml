@@ -1,0 +1,70 @@
+﻿name: AIRA Documents Validation
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate-documents:
+    name: Validate AIRA document repository
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Inventory files
+        shell: bash
+        run: |
+          echo "AIRA document inventory"
+          find . -type f \
+            -not -path './.git/*' \
+            -not -path './_review/*' \
+            | sort > aira-file-inventory.txt
+          cat aira-file-inventory.txt
+          echo "Total files:"
+          wc -l aira-file-inventory.txt
+
+      - name: Check for potential secret strings
+        shell: bash
+        run: |
+          echo "Scanning for high-risk secret indicators..."
+          set +e
+          grep -RInE \
+            'BEGIN RSA PRIVATE KEY|BEGIN OPENSSH PRIVATE KEY|AWS_ACCESS_KEY_ID|AWS_SECRET_ACCESS_KEY|client_secret|access_token|api_key|password[[:space:]]*=' \
+            . \
+            --exclude-dir=.git \
+            --exclude-dir=_review \
+            --exclude=Analyze-AiraDocuments.ps1
+          RESULT=True
+          set -e
+
+          if [ "" -eq 0 ]; then
+            echo "Potential secret-like strings found. Review required."
+            exit 1
+          fi
+
+          echo "No high-risk secret indicators found."
+
+      - name: Check required governance topics by filename
+        shell: bash
+        run: |
+          echo "Checking required AIRA governance topics by filename..."
+          REQUIRED="register avci evidence devsecops security governance poc readme"
+          for term in ; do
+            if ! find . -type f -iname "**" \
+              -not -path './.git/*' \
+              -not -path './_review/*' \
+              | grep -q .; then
+              echo "Missing expected topic in filename: "
+              exit 1
+            fi
+          done
+          echo "Required governance filename topics detected."
