@@ -1,0 +1,5 @@
+﻿# AIRA local review outputs
+_review/
+Analyze-AiraDocuments.ps1
+*.tmp
+*.bak
